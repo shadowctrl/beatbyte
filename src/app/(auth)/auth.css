@@ -1,0 +1,40 @@
+.signUpParent {
+  display: flex;
+}
+
+.signUpHeader {
+  display: flex;
+  flex-direction: column;
+
+  .signUpHeadContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+
+  .signUpHead {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    h1 {
+      font-weight: 700;
+    }
+  }
+
+  .signUpSubHead {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #536180;
+      font-weight: 900;
+    }
+  }
+}
+.signUpChild {
+  min-width: 30vw;
+  margin: auto;
+  padding: 20px 50px;
+}
