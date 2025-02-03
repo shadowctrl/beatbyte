@@ -1,0 +1,27 @@
+.navParent {
+  margin: 20px;
+}
+.navMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navHead {
+  display: flex;
+  gap: 5px;
+
+  h1 {
+    font-weight: 800;
+    font-size: var(--24px);
+    font-family: var(--font-geist-sans);
+  }
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: var(--font-geist-sans);
+  font-weight: 500;
+}
