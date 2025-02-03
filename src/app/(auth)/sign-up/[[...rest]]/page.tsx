@@ -1,9 +1,9 @@
+import { SignUp } from "@clerk/nextjs";
 import { NextPage } from "next";
-
 interface Props {}
 
 const Page: NextPage<Props> = ({}) => {
-  return <div></div>;
+  return <SignUp />;
 };
 
 export default Page;
