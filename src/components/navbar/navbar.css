@@ -28,4 +28,10 @@
   padding: 10px 20px;
   color: white;
   border-radius: 1vw;
+
+  .signInUrl {
+    background-color: var(--sec-col);
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
 }

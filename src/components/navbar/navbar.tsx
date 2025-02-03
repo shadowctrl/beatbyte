@@ -4,7 +4,14 @@ import { NextPage } from "next";
 import { navItems } from "@/constants";
 import Link from "next/link";
 import { navItemsType } from "@/types";
-import { SignedIn, UserButton, UserProfile } from "@clerk/nextjs";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+  UserProfile,
+} from "@clerk/nextjs";
+import { User } from "lucide-react";
 interface Props {}
 
 const Navbar: NextPage<Props> = ({}) => {
@@ -24,6 +31,11 @@ const Navbar: NextPage<Props> = ({}) => {
           <SignedIn>
             <UserButton />
           </SignedIn>
+          <SignedOut>
+            <SignInButton>
+              <button className="signInUrl">Sign In</button>
+            </SignInButton>
+          </SignedOut>
         </div>
       </div>
     </div>
