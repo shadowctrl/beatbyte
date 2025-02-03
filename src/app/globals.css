@@ -21,6 +21,7 @@
   --42px: 2.625rem;
   --48px: 3rem;
   --64px: 4rem;
+  --sec-col: #f02d34;
 }
 
 @media (prefers-color-scheme: light) {
