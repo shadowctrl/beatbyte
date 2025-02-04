@@ -12,6 +12,18 @@ export interface bannerDataType {
   description: string;
 }
 
+export interface footerBannerDataType {
+  imgUrl: string;
+  title: string;
+  smallText: string;
+  bigText: string;
+  buttonText: string;
+  description: string;
+  smallText1: string;
+  bigText1: string;
+  period: string;
+}
+
 export interface productDataType {
   id: string;
   imgUrl: string;

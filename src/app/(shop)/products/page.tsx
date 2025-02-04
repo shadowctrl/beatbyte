@@ -1,20 +1,26 @@
 import { NextPage } from "next";
 import "./products.css";
-import Banner from "@/components/Banner/banner";
 import { getBannerData } from "@/app/hooks/getBannerData";
 import { getProductData } from "@/app/hooks/getProductData";
 import Link from "next/link";
 import Image from "next/image";
-import { productDataType } from "@/types";
+import { bannerDataType, footerBannerDataType, productDataType } from "@/types";
+import { Banner, FooterBanner } from "@/components";
 
 interface Props {}
 
 const Page: NextPage<Props> = async ({}) => {
-  const bannerData = await getBannerData();
+  const {
+    headerBanner,
+    footerBanner,
+  }: { headerBanner: bannerDataType; footerBanner: footerBannerDataType } =
+    await getBannerData();
+
   const productData = await getProductData();
+
   return (
     <div>
-      <Banner data={bannerData} />
+      <Banner data={headerBanner} />
       <div className="productMain">
         <div className="productHead">
           <h1>Best Seller Products</h1>
@@ -36,6 +42,7 @@ const Page: NextPage<Props> = async ({}) => {
           ))}
         </div>
       </div>
+      <FooterBanner data={footerBanner} />
     </div>
   );
 };
