@@ -1,11 +1,15 @@
-import { productDataType } from "@/types";
+import { bannerDataType, productDataType } from "@/types";
 
-export const getProductData = async (): Promise<productDataType[]> => {
+export const getProductData = async (
+  slug?: string
+): Promise<productDataType[]> => {
   try {
     const response = await fetch(
       process.env.NEXT_PUBLIC_API_ENDPOINT + "/products"
     );
-    const data = await response.json();
+    let data = await response.json();
+    if (slug)
+      data = data.filter((product: productDataType) => product.slug === slug);
     return data;
   } catch (error) {
     console.error("Error fetching product data: ", error);
