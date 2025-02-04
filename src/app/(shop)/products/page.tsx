@@ -28,7 +28,11 @@ const Page: NextPage<Props> = async ({}) => {
         </div>
         <div className="productContainer">
           {productData.map((val: productDataType) => (
-            <Link href={val.slug} key={val.slug} className="productCard">
+            <Link
+              href={"/products/" + val.slug}
+              key={val.slug}
+              className="productCard"
+            >
               <Image
                 src={val.imgUrl}
                 width={250}
