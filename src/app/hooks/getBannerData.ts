@@ -1,6 +1,6 @@
 import { bannerDataType } from "@/types";
 
-export const getBannerData = async (): Promise<bannerDataType> => {
+export const getBannerData = async () => {
   try {
     const response = await fetch(
       process.env.NEXT_PUBLIC_API_ENDPOINT + "/banner",

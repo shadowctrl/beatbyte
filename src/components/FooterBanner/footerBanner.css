@@ -1,0 +1,80 @@
+.footerBannerMain {
+  height: 350px;
+  background-color: var(--sec-col);
+  margin: 20px 80px;
+  border-radius: 20px;
+  position: relative;
+  padding: 40px 20px;
+  margin-top: 10vh;
+}
+
+.footerBannerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: 100%;
+}
+
+.footerBannerText {
+  max-width: 500px;
+  color: white;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .smallText {
+    text-transform: uppercase;
+    margin-left: -15px;
+  }
+
+  .bigText {
+    font-size: 5em;
+    line-height: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .period {
+    text-transform: capitalize;
+    margin-left: -10px;
+  }
+}
+
+.footerBannerText1 {
+  max-width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  .smallText1 {
+    text-transform: capitalize;
+  }
+
+  .bigText1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: capitolize;
+    line-height: normal;
+  }
+  .description {
+    font-weight: 200;
+  }
+
+  button {
+    margin-top: 4vh;
+    text-align: left;
+    padding: 10px 15px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+    color: var(--sec-col);
+    font-weight: 600;
+  }
+}
+
+.footerBannerImage {
+  position: absolute;
+  top: -30%;
+  right: 35%;
+}

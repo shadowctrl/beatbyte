@@ -1,10 +1,80 @@
 {
   "banner": {
-    "imgUrl": "/assets/headphones_a_1.webp",
-    "title": "Beats Solo Air",
-    "smallText": "Summer Sale",
-    "bigText": "Headphones",
-    "buttonText": "Shop Wireless Headphones",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat,"
-  }
+    "footerBanner": {
+      "imgUrl": "/assets/headphones_b_2.webp",
+      "smallText": "20% off",
+      "smallText1": "Beats Solo Air",
+      "bigText": "Fine smile",
+      "bigText1": "Summer Sale",
+      "buttonText": "Shop Wireless Headphones",
+      "period": "4 jan to 2 feb",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "headerBanner": {
+      "imgUrl": "/assets/headphones_a_1.webp",
+      "title": "Beats Solo Air",
+      "smallText": "Summer Sale",
+      "bigText": "Headphones",
+      "buttonText": "Shop Wireless Headphones",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat,"
+    }
+  },
+  "products": [
+    {
+      "imgUrl": "/assets/speaker1.webp",
+      "title": "Marshal Speaker",
+      "slug": "marshal-speaker",
+      "price": 299.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+    },
+    {
+      "imgUrl": "/assets/headphones_c_1.webp",
+      "title": "Beats Solo Air",
+      "slug": "Beats-Solo-Air",
+      "price": 299.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+    },
+    {
+      "imgUrl": "/assets/watch_1.webp",
+      "title": "Smart Watch",
+      "slug": "smart-watch",
+      "price": 299.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+    },
+    {
+      "imgUrl": "/assets/earphones_a_1.webp",
+      "title": "Boat Special Edition",
+      "slug": "boat-special-edition",
+      "price": 299.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+    },
+    {
+      "imgUrl": "/assets/speaker3.webp",
+      "title": "Marshal Speaker - Special Edition",
+      "slug": "marshal-speaker-special-edition",
+      "price": 299.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+    },
+    {
+      "imgUrl": "/assets/headphones_a_4.webp",
+      "title": "Beats Solo Air - Special Edition",
+      "slug": "Beats-Solo-Air-Special-Edition",
+      "price": 299.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+    },
+    {
+      "imgUrl": "/assets/headphones_b_3.webp",
+      "title": "Comfort Headset",
+      "slug": "comfort-headset",
+      "price": 299.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+    },
+    {
+      "imgUrl": "/assets/earphones_c_1.webp",
+      "title": "Earphones",
+      "slug": "earphones",
+      "price": 299.99,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+    }
+  ]
 }
