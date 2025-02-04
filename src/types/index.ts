@@ -11,3 +11,12 @@ export interface bannerDataType {
   buttonText: string;
   description: string;
 }
+
+export interface productDataType {
+  id: string;
+  imgUrl: string;
+  title: string;
+  slug: string;
+  price: number;
+  description: string;
+}

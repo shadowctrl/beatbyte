@@ -1,0 +1,41 @@
+.productMain {
+  width: 100%;
+  padding: 20px 80px;
+}
+
+.productHead {
+  text-align: center;
+  h1 {
+    font-size: var(--42px);
+    font-weight: 900;
+    font-family: var(--font-geist-sans);
+    color: #324d67;
+  }
+  p {
+    font-weight: 200;
+    font-size: var(--16px);
+  }
+}
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2vh;
+}
+
+.productImage {
+  border-radius: 15px;
+  background-color: #ebebeb;
+  padding: 20px;
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.productCard {
+  p {
+    font-weight: bold;
+  }
+}
