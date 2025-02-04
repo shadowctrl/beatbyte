@@ -1,0 +1,39 @@
+.intProductMain {
+  padding: 20px 40px;
+  display: flex;
+  gap: 50px;
+}
+
+.intProductImage {
+  border-radius: 15px;
+  background-color: #ebebeb;
+  padding: 20px;
+  width: fit-content;
+}
+
+.intProductDetails {
+  padding: 30px 0;
+  font-family: var(--font-geist-sans);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .title {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.2em;
+  }
+
+  .price {
+    padding-top: 20px;
+    color: var(--sec-col);
+    font-weight: bold;
+    font-size: var(--24px);
+  }
+
+  .description {
+    font-weight: 200;
+    max-width: 70%;
+  }
+}
