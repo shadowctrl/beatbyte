@@ -1,0 +1,7 @@
+.globalButton {
+  padding: 10px 20px;
+  background-color: var(--sec-col);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+}
