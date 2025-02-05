@@ -2,6 +2,7 @@ import { bannerDataType, footerBannerDataType } from "@/types";
 import { NextPage } from "next";
 import "./footerBanner.css";
 import Image from "next/image";
+import Button from "../ui/Button/button";
 
 interface Props {
   data: footerBannerDataType;
@@ -41,7 +42,7 @@ const Page: NextPage<Props> = ({
           <h4 className="bigText1">{bigText1}</h4>
           <h5 className="description">{description}</h5>
 
-          <button>{buttonText}</button>
+          <Button> {buttonText}</Button>
         </div>
       </div>{" "}
     </div>

@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import "./banner.css";
 import Image from "next/image";
 import { bannerDataType } from "@/types";
+import Button from "../ui/Button/button";
 
 interface Props {
   data: bannerDataType;
@@ -17,7 +18,7 @@ const Banner: NextPage<Props> = ({
           <h3>{title}</h3>
           <h4>{smallText}</h4>
           <h5>{bigText}</h5>
-          <button>{buttonText}</button>
+          <Button>{buttonText}</Button>
         </div>
         <div className="bannerImage">
           <Image src={imgUrl} width={450} height={450} alt="Banner Image" />{" "}
