@@ -18,5 +18,6 @@ export const getBannerData = async () => {
   } catch (error) {
     console.error("Error fetching banner data:", error);
     throw new Error("Failed to fetch banner data. Please try again later.");
+    return { data: null };
   }
 };
