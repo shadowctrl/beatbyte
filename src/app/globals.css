@@ -22,6 +22,7 @@
   --48px: 3rem;
   --64px: 4rem;
   --sec-col: #f02d34;
+  --head-col: #324d67;
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,4 +36,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.globalHeading {
+  font-size: var(--42px);
+  font-weight: 900;
+  font-family: var(--font-geist-sans);
+  color: var(--head-col);
+  text-align: center;
 }

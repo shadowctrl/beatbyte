@@ -1,0 +1,25 @@
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2vh;
+}
+
+.productImage {
+  border-radius: 15px;
+  background-color: #ebebeb;
+  padding: 20px;
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.productCard {
+  max-width: 250px;
+
+  p {
+    font-weight: bold;
+  }
+}
