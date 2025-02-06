@@ -31,4 +31,11 @@ export interface productDataType {
   slug: string;
   price: number;
   description: string;
+  discountText?: string;
+  category?: string[];
+}
+
+export interface UseCartVisibilityProps {
+  cartId?: string;
+  scrollThreshold?: number;
 }

@@ -1,9 +1,5 @@
-import { useEffect, useCallback, ReactNode } from "react";
-
-interface UseCartVisibilityProps {
-  cartId?: string;
-  scrollThreshold?: number;
-}
+import { useEffect, useCallback } from "react";
+import { UseCartVisibilityProps } from "@/types";
 
 export const useCartVisibility = ({
   cartId = "cart",
