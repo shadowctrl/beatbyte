@@ -26,6 +26,12 @@ export const useCartVisibility = ({
     element?.classList.add("cartInvisible");
   }, [getCartElement]);
 
+  const openCart = useCallback(() => {
+    const element = getCartElement();
+    element?.classList.add("cartVisible");
+    element?.classList.remove("cartInvisible");
+  }, [getCartElement]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > scrollThreshold) {
@@ -35,6 +41,12 @@ export const useCartVisibility = ({
 
     const handleClickOutside = (e: MouseEvent) => {
       const element = getCartElement();
+
+      if ((e.target as HTMLElement).id === "addToCart") {
+        openCart();
+        return;
+      }
+
       if (element && !element.contains(e.target as Node)) {
         closeCart();
       }
