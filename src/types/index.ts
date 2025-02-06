@@ -25,6 +25,7 @@ export interface footerBannerDataType {
 }
 
 export interface productDataType {
+  quantity: number;
   id: string;
   imgUrl: string;
   title: string;
