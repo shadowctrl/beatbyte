@@ -22,9 +22,11 @@
   "products": [
     {
       "imgUrl": "/assets/speaker1.webp",
-      "title": "Marshal Speaker",
+      "title": "Marshall Emberton II Compact Portable Bluetooth Speaker",
       "slug": "marshal-speaker",
+      "discountText": "10% off",
       "price": 299.99,
+      "category": ["speaker", "Headphones"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
     },
     {
@@ -32,6 +34,7 @@
       "title": "Beats Solo Air",
       "slug": "Beats-Solo-Air",
       "price": 299.99,
+      "category": ["speaker", "Headphones"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
     },
     {
@@ -39,6 +42,7 @@
       "title": "Smart Watch",
       "slug": "smart-watch",
       "price": 299.99,
+      "category": ["speaker", "Headphones"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
     },
     {
@@ -46,6 +50,7 @@
       "title": "Boat Special Edition",
       "slug": "boat-special-edition",
       "price": 299.99,
+      "category": ["speaker", "Headphones"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
     },
     {
@@ -53,6 +58,7 @@
       "title": "Marshal Speaker - Special Edition",
       "slug": "marshal-speaker-special-edition",
       "price": 299.99,
+      "category": ["speaker", "Headphones"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
     },
     {
@@ -60,6 +66,7 @@
       "title": "Beats Solo Air - Special Edition",
       "slug": "Beats-Solo-Air-Special-Edition",
       "price": 299.99,
+      "category": ["speaker", "Headphones"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
     },
     {
@@ -67,6 +74,7 @@
       "title": "Comfort Headset",
       "slug": "comfort-headset",
       "price": 299.99,
+      "category": ["speaker", "Headphones"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
     },
     {
@@ -74,6 +82,7 @@
       "title": "Earphones",
       "slug": "earphones",
       "price": 299.99,
+      "category": ["speaker", "Headphones"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
     }
   ]

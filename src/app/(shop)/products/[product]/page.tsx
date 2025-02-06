@@ -1,9 +1,11 @@
-import { getProductData } from "@/app/hooks/getProductData";
+import { getProductData } from "@/hooks/getProductData";
 import { productDataType } from "@/types";
 import { NextPage } from "next";
 import Image from "next/image";
 import "./product.css";
 import Button from "@/components/ui/Button/button";
+import RelatedProduct from "@/components/relatedProduct/relatedProduct";
+import AddToCart from "@/components/addToCart/addToCart";
 
 interface Props {
   params: {
@@ -17,20 +19,25 @@ const Page: NextPage<Props> = async ({ params }) => {
   if (!data) return <div>Product not found</div>;
 
   return (
-    <div>
-      <div className="intProductMain">
+    <div className="intProductParent">
+      <div className="intProductContainer">
         <div className="intProductImage">
           <Image src={data.imgUrl} alt={data.title} width={450} height={450} />
         </div>
         <div className="intProductDetails">
           <div>
-            <h3 className="title">{data.title}</h3>
+            <h3 className="title">
+              {data.title}{" "}
+              {data.discountText && <span>({data.discountText})</span>}
+            </h3>
             <h4 className="price">${data.price}</h4>
             <p className="description">{data.description}</p>
           </div>
-          <Button disabled>Add to cart</Button>
+
+          <AddToCart product={data} />
         </div>
       </div>
+      <RelatedProduct category={data.category} slug={data.slug} />
     </div>
   );
 };
