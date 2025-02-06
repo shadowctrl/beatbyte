@@ -11,7 +11,7 @@ import {
   UserButton,
   UserProfile,
 } from "@clerk/nextjs";
-import { User } from "lucide-react";
+import Cart from "./cart";
 interface Props {}
 
 const Navbar: NextPage<Props> = ({}) => {
@@ -30,6 +30,7 @@ const Navbar: NextPage<Props> = ({}) => {
           ))}
           <SignedIn>
             <UserButton />
+            <Cart />
           </SignedIn>
           <SignedOut>
             <SignInButton>

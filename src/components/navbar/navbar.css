@@ -1,5 +1,6 @@
 .navParent {
   padding: 20px 40px;
+  position: relative;
 }
 .navMain {
   display: flex;
@@ -34,4 +35,21 @@
     padding: 5px 10px;
     border-radius: 10px;
   }
+}
+
+.navCartParent {
+}
+.navCartMain {
+  height: 100%;
+}
+
+.navCartButton {
+  display: flex;
+  align-items: center;
+}
+
+.cartIcon {
+}
+
+.cartContainer {
 }

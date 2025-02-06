@@ -1,5 +1,7 @@
-.intProductMain {
+.intProductParent {
   padding: 20px 40px;
+}
+.intProductContainer {
   display: flex;
   gap: 50px;
 }
@@ -23,6 +25,12 @@
     font-size: 3em;
     font-weight: 700;
     line-height: 1.2em;
+
+    span {
+      color: var(--sec-col);
+      font-size: var(--18px);
+      text-transform: capitalize;
+    }
   }
 
   .price {
