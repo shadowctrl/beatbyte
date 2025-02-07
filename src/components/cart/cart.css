@@ -1,6 +1,9 @@
 .cartWrapper {
   position: relative;
   flex-shrink: 0;
+  max-height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
 }
 
 .cartInvisible {
@@ -11,11 +14,9 @@
   width: 300px;
 }
 
-.cartWrapper {
-  overflow-x: hidden;
-  background-color: black;
+.cartContainer {
+  width: 100%;
 }
-
 .productCartContainer {
   display: flex;
   flex-direction: column;
@@ -68,4 +69,15 @@
 .cartProductImage {
   border-radius: 15px;
   background-color: #252525;
+}
+
+.cartCheckout {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
 }

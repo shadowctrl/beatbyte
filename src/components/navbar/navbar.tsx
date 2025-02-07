@@ -30,13 +30,13 @@ const Navbar: NextPage<Props> = ({}) => {
           ))}
           <SignedIn>
             <UserButton />
-            <Cart />
           </SignedIn>
           <SignedOut>
             <SignInButton>
               <button className="signInUrl">Sign In</button>
             </SignInButton>
           </SignedOut>
+          <Cart />
         </div>
       </div>
     </div>
