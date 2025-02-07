@@ -7,11 +7,40 @@ import { useContext } from "react";
 import { cartContext } from "@/context/useCart";
 import { productDataType } from "@/types";
 import Button from "../ui/Button/button";
+import { useUser } from "@clerk/nextjs";
+import { redirect, usePathname } from "next/navigation";
+import getStripe from "@/utils/getStripe";
 
 interface Props {}
 
 const Cart: NextPage<Props> = ({}) => {
+  const { isSignedIn, user } = useUser();
+  const pathName = usePathname();
   const { cart, deleteFromCart, clearCart } = useContext(cartContext);
+  const isCartItems = cart.length > 0;
+
+  const handleClick = async (cart: productDataType[]) => {
+    if (!isSignedIn) return redirect(`/sign-in?redirect_url=${pathName}`);
+    const stripe = await getStripe();
+    if (!stripe) return;
+
+    const response = await fetch("/api/checkout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        cart,
+        user,
+      }),
+    });
+
+    const session = await response.json();
+    await stripe.redirectToCheckout({
+      sessionId: session.id,
+    });
+  };
+
   return (
     <div className="cartWrapper">
       <div className="cartParent cartInvisible" id="cart">
@@ -19,11 +48,9 @@ const Cart: NextPage<Props> = ({}) => {
           <div className="cartHeader">
             <div className="left">
               <ShoppingBag size={22} />
-              <h1>
-                Cart Items {cart.length > 0 && <span>- {cart.length}</span>}{" "}
-              </h1>
+              <h1>Cart Items {isCartItems && <span>- {cart.length}</span>} </h1>
             </div>
-            {cart.length > 0 && (
+            {isCartItems && (
               <div className="right">
                 <Trash
                   size={20}
@@ -71,6 +98,11 @@ const Cart: NextPage<Props> = ({}) => {
           </div>
         </div>
       </div>
+      {isCartItems && (
+        <div className="cartCheckout">
+          <Button onClick={() => handleClick(cart)}>Proceed to Checkout</Button>
+        </div>
+      )}
     </div>
   );
 };
