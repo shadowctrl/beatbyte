@@ -1,7 +1,13 @@
 "use client";
 import { NextPage } from "next";
 import "./cart.css";
-import { ShoppingBag, Trash, Trash2, Trash2Icon } from "lucide-react";
+import {
+  CircleMinus,
+  CirclePlus,
+  ShoppingBag,
+  Trash,
+  Trash2Icon,
+} from "lucide-react";
 import Image from "next/image";
 import { useContext } from "react";
 import { cartContext } from "@/context/useCart";
@@ -16,7 +22,8 @@ interface Props {}
 const Cart: NextPage<Props> = ({}) => {
   const { isSignedIn, user } = useUser();
   const pathName = usePathname();
-  const { cart, deleteFromCart, clearCart } = useContext(cartContext);
+  const { cart, deleteFromCart, clearCart, addToCart, deleteItem } =
+    useContext(cartContext);
   const isCartItems = cart.length > 0;
 
   const handleClick = async (cart: productDataType[]) => {
@@ -78,11 +85,16 @@ const Cart: NextPage<Props> = ({}) => {
                     <p className="price">
                       Price: <span>{item.price}</span>
                     </p>
-                    <p className="quantity">Quantity: {item.quantity}</p>
+                    <div className="quantity">
+                      Quantity:
+                      <CircleMinus onClick={() => deleteFromCart(item)} />
+                      <span>{item.quantity} </span>
+                      <CirclePlus onClick={() => addToCart(item)} />
+                    </div>
                   </div>
                 </div>
                 <Trash2Icon
-                  onClick={() => deleteFromCart(item)}
+                  onClick={() => deleteItem(item)}
                   size={25}
                   color="var(--sec-col)"
                   style={{

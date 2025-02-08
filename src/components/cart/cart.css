@@ -63,6 +63,26 @@
         color: var(--sec-col);
       }
     }
+
+    .quantity {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      user-select: none;
+
+      span {
+        padding: 2px 5px;
+        background-color: #252525;
+        border-radius: 3px;
+      }
+      svg {
+        width: 16px;
+        cursor: pointer;
+        &:hover {
+          color: var(--sec-col);
+        }
+      }
+    }
   }
 }
 
@@ -80,4 +100,5 @@
   width: 100%;
   justify-content: center;
   padding: 20px;
+  user-select: none;
 }
