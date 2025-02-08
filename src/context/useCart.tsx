@@ -7,11 +7,13 @@ export const cartContext = createContext<{
   addToCart: (item: productDataType) => void;
   clearCart: () => void;
   deleteFromCart: (item: productDataType) => void;
+  deleteItem: (item: productDataType) => void;
 }>({
   cart: [],
   addToCart: () => {},
   clearCart: () => {},
   deleteFromCart: () => {},
+  deleteItem: () => {},
 });
 
 export const CartContextProvider = ({ children }: { children: ReactNode }) => {
@@ -41,6 +43,12 @@ export const CartContextProvider = ({ children }: { children: ReactNode }) => {
     });
   };
 
+  const deleteItem = (item: productDataType) => {
+    setCart((prevCart) =>
+      prevCart.filter((cartItem) => cartItem.slug !== item.slug)
+    );
+  };
+
   const deleteFromCart = (item: productDataType) => {
     setCart((prevCart) => {
       const existingItem = prevCart.find((i) => i.slug === item.slug);
@@ -64,7 +72,7 @@ export const CartContextProvider = ({ children }: { children: ReactNode }) => {
 
   return (
     <cartContext.Provider
-      value={{ cart, addToCart, clearCart, deleteFromCart }}
+      value={{ cart, addToCart, clearCart, deleteFromCart, deleteItem }}
     >
       {children}
     </cartContext.Provider>

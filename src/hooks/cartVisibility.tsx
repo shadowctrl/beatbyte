@@ -28,8 +28,13 @@ export const useCartVisibility = ({
 
   const openCart = useCallback(() => {
     const element = getCartElement();
-    element?.classList.add("cartVisible");
-    element?.classList.remove("cartInvisible");
+    if (element) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => {
+        element.classList.add("cartVisible");
+        element.classList.remove("cartInvisible");
+      }, 300); // Adjust the timeout duration as needed
+    }
   }, [getCartElement]);
 
   useEffect(() => {
