@@ -7,11 +7,13 @@
 }
 
 .cartInvisible {
-  display: none;
+  width: 0;
+  margin-right: -20vw;
 }
 
 .cartVisible {
-  width: 300px;
+  width: 400px;
+  margin-right: 0;
 }
 
 .cartContainer {
@@ -23,6 +25,7 @@
   justify-content: center;
   gap: 40px;
   padding: 40px 0;
+  padding-bottom: 100px;
 }
 
 .cartParent {
@@ -30,7 +33,7 @@
   padding: 30px 20px;
   overflow-y: auto;
   color: white;
-  transition: transform 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .cartHeader {
