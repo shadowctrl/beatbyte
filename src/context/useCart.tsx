@@ -1,14 +1,9 @@
 "use client";
 import { productDataType } from "@/types";
 import { createContext, ReactNode, useEffect, useState } from "react";
+import { CartContextType } from "@/types";
 
-export const cartContext = createContext<{
-  cart: productDataType[];
-  addToCart: (item: productDataType) => void;
-  clearCart: () => void;
-  deleteFromCart: (item: productDataType) => void;
-  deleteItem: (item: productDataType) => void;
-}>({
+export const cartContext = createContext<CartContextType>({
   cart: [],
   addToCart: () => {},
   clearCart: () => {},
@@ -43,7 +38,11 @@ export const CartContextProvider = ({ children }: { children: ReactNode }) => {
     });
   };
 
-  const deleteItem = (item: productDataType) => {
+  const deleteItem = (
+    item: productDataType,
+    e: React.MouseEvent<SVGElement>
+  ) => {
+    e.stopPropagation();
     setCart((prevCart) =>
       prevCart.filter((cartItem) => cartItem.slug !== item.slug)
     );

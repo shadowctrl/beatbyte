@@ -94,7 +94,9 @@ const Cart: NextPage<Props> = ({}) => {
                   </div>
                 </div>
                 <Trash2Icon
-                  onClick={() => deleteItem(item)}
+                  onClick={(e: React.MouseEvent<SVGElement>) =>
+                    deleteItem(item, e)
+                  }
                   size={25}
                   color="var(--sec-col)"
                   style={{

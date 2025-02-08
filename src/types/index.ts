@@ -40,3 +40,11 @@ export interface UseCartVisibilityProps {
   cartId?: string;
   scrollThreshold?: number;
 }
+
+export interface CartContextType {
+  cart: productDataType[];
+  addToCart: (item: productDataType) => void;
+  clearCart: () => void;
+  deleteFromCart: (item: productDataType) => void;
+  deleteItem: (item: productDataType, e: React.MouseEvent<SVGElement>) => void;
+}
