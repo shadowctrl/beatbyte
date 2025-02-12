@@ -14,11 +14,7 @@ interface Props {
   }>;
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { product: string };
-}) {
+export async function generateMetadata({ params }: Props) {
   const { product } = await params;
   const data = await getProductData(product).then((data) => data[0]);
   if (!data)
