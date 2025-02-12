@@ -8,9 +8,9 @@ import RelatedProduct from "@/components/relatedProduct/relatedProduct";
 import AddToCart from "@/components/addToCart/addToCart";
 
 interface Props {
-  params: {
+  params: Promise<{
     product: string;
-  };
+  }>;
 }
 
 const Page: NextPage<Props> = async ({ params }) => {
