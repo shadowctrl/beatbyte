@@ -1,0 +1,51 @@
+.loadingParent {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinnerContainer {
+  position: relative;
+  width: var(--64px);
+  height: var(--64px);
+}
+
+.spinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 8px solid var(--sec-col);
+  border-top: 8px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loadingText {
+  margin-top: var(--24px);
+  color: var(--head-col);
+  font-size: var(--18px);
+  font-weight: 600;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 640px) {
+  .spinnerContainer {
+    width: var(--48px);
+    height: var(--48px);
+  }
+
+  .loadingText {
+    font-size: var(--16px);
+  }
+}
