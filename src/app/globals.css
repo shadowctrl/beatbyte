@@ -45,3 +45,67 @@ body {
   color: var(--head-col);
   text-align: center;
 }
+
+.notFoundParent {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--16px);
+}
+
+.notFoundHead {
+  text-align: center;
+}
+
+.notFoundHead h1 {
+  font-size: 8rem;
+  color: var(--sec-col);
+  font-weight: 900;
+  margin-bottom: var(--24px);
+}
+
+.notFoundContainer {
+  margin-bottom: var(--32px);
+}
+
+.notFoundContainer h2 {
+  font-size: var(--26px);
+  color: var(--head-col);
+  font-weight: 700;
+  margin-bottom: var(--16px);
+}
+
+.notFoundContainer p {
+  font-size: var(--18px);
+  color: var(--foreground);
+}
+
+.notFoundHead a {
+  background-color: var(--sec-col);
+  color: white;
+  padding: var(--16px) var(--32px);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.notFoundHead a:hover {
+  opacity: 0.9;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 640px) {
+  .notFoundHead h1 {
+    font-size: var(--48px);
+  }
+
+  .notFoundContainer h2 {
+    font-size: var(--24px);
+  }
+
+  .notFoundContainer p {
+    font-size: var(--16px);
+  }
+}
