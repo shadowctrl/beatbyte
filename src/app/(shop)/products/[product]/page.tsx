@@ -6,11 +6,31 @@ import "./product.css";
 import Button from "@/components/ui/Button/button";
 import RelatedProduct from "@/components/relatedProduct/relatedProduct";
 import AddToCart from "@/components/addToCart/addToCart";
+import Head from "next/head";
 
 interface Props {
   params: Promise<{
     product: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { product: string };
+}) {
+  const { product } = await params;
+  const data = await getProductData(product).then((data) => data[0]);
+  if (!data)
+    return {
+      title: "Product not found",
+      description: "The product you are looking for does not exist.",
+    };
+
+  return {
+    title: `${data.title} - Buy Now at Best Price - BeatByte`,
+    description: `${data.description.substring(0, 160)}...`,
+  };
 }
 
 const Page: NextPage<Props> = async ({ params }) => {

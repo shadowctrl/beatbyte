@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { Metadata, NextPage } from "next";
 import "./products.css";
 import { getBannerData } from "@/hooks/getBannerData";
 import { getProductData } from "@/hooks/getProductData";
@@ -10,6 +10,11 @@ import Card from "@/components/card/card";
 
 interface Props {}
 
+export const metadata: Metadata = {
+  title: "Best Seller Products - BeatByte Shop",
+  description:
+    "Discover the best seller products at BeatByte Shop. Find top-rated items and exclusive deals on our wide range of products.",
+};
 const Page: NextPage<Props> = async ({}) => {
   const {
     headerBanner,
