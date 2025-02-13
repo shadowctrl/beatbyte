@@ -49,10 +49,7 @@ const Footer: NextPage<Props> = ({}) => {
             <h3>Quick Links</h3>
             <ul>
               <li>
-                <Link href="/about">About Us</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/about-us">About Us</Link>
               </li>
               <li>
                 <Link href="/products">Products</Link>

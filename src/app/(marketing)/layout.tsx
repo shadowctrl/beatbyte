@@ -1,4 +1,5 @@
 import { Navbar } from "@/components";
+import Footer from "@/components/footer/footer";
 import { NextPage } from "next";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -6,6 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div>
       <Navbar />
       {children}
+      <Footer />
     </div>
   );
 };

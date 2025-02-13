@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { Navbar } from "@/components";
 import Cart from "@/components/cart/cart";
 import { CartContextProvider } from "@/context/useCart";
+import Footer from "@/components/footer/footer";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <div className="min-w-0 flex-grow">
           <Navbar />
           {children}
+          <Footer />
         </div>
         <Cart />
       </div>
