@@ -1,0 +1,163 @@
+.footerParent {
+  background-color: #171717;
+  color: white;
+  padding: var(--48px) 0 0 0;
+  margin-top: 10vh;
+}
+
+.footerContainer {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 0 var(--16px);
+}
+
+.footerMain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--32px);
+  margin-bottom: var(--48px);
+}
+
+.footerCompany {
+  max-width: 300px;
+}
+
+.footerLogo {
+  margin-bottom: var(--16px);
+  display: flex;
+  gap: var(--12px);
+  align-items: center;
+
+  h3 {
+    font-weight: bold;
+    font-size: var(--24px);
+  }
+}
+
+.footerCompany p {
+  font-size: var(--14px);
+  margin-bottom: var(--16px);
+  line-height: 1.6;
+}
+
+.footerSocial {
+  display: flex;
+  gap: var(--16px);
+}
+
+.footerSocial a {
+  color: white;
+  font-size: var(--24px);
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+    color: var(--sec-col);
+  }
+}
+
+.footerLinks h3,
+.footerService h3,
+.footerContact h3 {
+  color: white;
+  font-size: var(--18px);
+  font-weight: 600;
+  margin-bottom: var(--16px);
+}
+
+.footerLinks ul,
+.footerService ul,
+.footerContact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li,
+.footerService li,
+.footerContact li {
+  margin-bottom: var(--12px);
+}
+
+.footerLinks a,
+.footerService a {
+  color: white;
+  text-decoration: none;
+  font-size: var(--14px);
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    color: var(--sec-col);
+    opacity: 0.8;
+  }
+}
+
+.footerContact li {
+  display: flex;
+  align-items: center;
+  gap: var(--12px);
+  font-size: var(--14px);
+}
+
+.footerContact i {
+  font-size: var(--16px);
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--24px) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerBottom p {
+  font-size: var(--14px);
+}
+
+.footerPolicy {
+  display: flex;
+  gap: var(--24px);
+}
+
+.footerPolicy a {
+  color: white;
+  text-decoration: none;
+  font-size: var(--14px);
+  transition: opacity 0.2s ease;
+}
+
+.footerPolicy a:hover {
+  opacity: 0.8;
+  color: var(--sec-col);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .footerMain {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerMain {
+    grid-template-columns: 1fr;
+    gap: var(--24px);
+  }
+
+  .footerCompany {
+    max-width: 100%;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--16px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footerPolicy {
+    flex-direction: column;
+    gap: var(--12px);
+  }
+}

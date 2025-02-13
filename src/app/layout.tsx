@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkLoaded, ClerkLoading, ClerkProvider } from "@clerk/nextjs";
 import LoadingSpinner from "@/components/ui/loading/loading";
+import Footer from "@/components/footer/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
             <LoadingSpinner />
           </ClerkLoading>
           <ClerkLoaded> {children}</ClerkLoaded>
+          <Footer />
         </body>
       </html>
     </ClerkProvider>
