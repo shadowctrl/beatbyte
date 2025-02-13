@@ -1,17 +1,17 @@
 import "./auth.css";
 import { ReactNode } from "react";
 import Image from "next/image";
-interface Props {}
+import Link from "next/link";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="signUpParent">
       <div className="signUpHeader">
         <div className="signUpHeadContainer">
-          <div className="signUpHead">
+          <Link href={"/"} className="signUpHead">
             <Image src={"/assets/logo.png"} width={25} height={25} alt="logo" />
             <h1>BeatByte</h1>
-          </div>
+          </Link>
           <div className="signUpSubHead">
             <span>/</span>
             <h1>Welcome</h1>
@@ -19,7 +19,14 @@ const Layout = ({ children }: { children: ReactNode }) => {
         </div>
         <div className="signUpChild">{children}</div>
       </div>
-      <div className="absolute right-0 w-[65vw] h-[100vh] bg-black"></div>
+      <div className="welcome">
+        <div className="welcomeContainer">
+          <h2>
+            Welcome to <span>Beat</span>Byte
+          </h2>
+          <p>Your journey to the best beats starts here.</p>
+        </div>
+      </div>
     </div>
   );
 };

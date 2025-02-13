@@ -38,3 +38,32 @@
   margin: auto;
   padding: 20px 50px;
 }
+
+.welcome {
+  position: absolute;
+  right: 0;
+  width: 65vw;
+  height: 100vh;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .welcomeContainer {
+    color: white;
+    text-align: center;
+
+    h2 {
+      font-size: var(--42px);
+      font-weight: bold;
+      margin-bottom: var(--14px);
+      span {
+        color: var(--sec-col);
+      }
+    }
+
+    p {
+      font-size: var(--18px);
+    }
+  }
+}
