@@ -33,13 +33,13 @@ const Footer: NextPage<Props> = ({}) => {
               excellence and satisfaction.
             </p>
             <div className="footerSocial">
-              <Link href="https://facebook.com">
+              <Link href="https://facebook.com" target="_blank">
                 <Facebook />
               </Link>
-              <Link href="https://twitter.com">
+              <Link href="https://twitter.com" target="_blank">
                 <Twitter />
               </Link>
-              <Link href="https://instagram.com">
+              <Link href="https://instagram.com" target="_blank">
                 <Instagram />
               </Link>
             </div>
@@ -87,11 +87,11 @@ const Footer: NextPage<Props> = ({}) => {
               </li>
               <li>
                 <Mail />
-                <span>support@yourstore.com</span>
+                <span>support@beatbyte.com</span>
               </li>
               <li>
                 <MapPin />
-                <span>123 Store Street, City, Country</span>
+                <span>123 New York City, US</span>
               </li>
             </ul>
           </div>
