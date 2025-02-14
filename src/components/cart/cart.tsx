@@ -114,7 +114,7 @@ const Cart: NextPage<Props> = ({}) => {
       </div>
       {isCartItems && (
         <div className="cartCheckout">
-          <Button onClick={() => handleClick(cart)}>Proceed to Checkout</Button>
+          <button onClick={() => handleClick(cart)}>Proceed to Checkout</button>
         </div>
       )}
     </div>

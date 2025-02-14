@@ -104,4 +104,27 @@
   justify-content: center;
   padding: 20px;
   user-select: none;
+
+  button {
+    background-color: var(--sec-col);
+    width: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: var(--14px);
+    font-size: var(--16px);
+    font-weight: 700;
+    color: white;
+    visibility: hidden;
+    animation: widthTrans 0.3s ease forwards;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@keyframes widthTrans {
+  100% {
+    width: 100%;
+    visibility: visible;
+  }
 }
