@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { Navbar } from "@/components";
 import Cart from "@/components/cart/cart";
 import { CartContextProvider } from "@/context/useCart";
-import Footer from "@/components/footer/footer";
+import { Footer } from "@/components";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (

@@ -1,5 +1,5 @@
 import { Navbar } from "@/components";
-import Footer from "@/components/footer/footer";
+import { Footer } from "@/components";
 import { NextPage } from "next";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
