@@ -8,7 +8,7 @@ interface Props {
   data: footerBannerDataType;
 }
 
-const footerBanner: NextPage<Props> = ({
+const FooterBanner: NextPage<Props> = ({
   data: {
     imgUrl,
 
@@ -48,5 +48,5 @@ const footerBanner: NextPage<Props> = ({
     </div>
   );
 };
-
-export default footerBanner;
+  
+export default FooterBanner;
