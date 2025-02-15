@@ -48,5 +48,5 @@ const FooterBanner: NextPage<Props> = ({
     </div>
   );
 };
-
+  
 export default FooterBanner;
