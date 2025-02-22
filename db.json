@@ -3,87 +3,95 @@
     "footerBanner": {
       "imgUrl": "/assets/headphones_b_2.webp",
       "smallText": "20% off",
-      "smallText1": "Beats Solo Air",
-      "bigText": "Fine smile",
+      "smallText1": "Beats Solo Pro",
+      "bigText": "Big Savings",
       "bigText1": "Summer Sale",
       "buttonText": "Shop Wireless Headphones",
-      "period": "4 jan to 2 feb",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "period": "4 Jan to 2 Feb",
+      "description": "Get the best deals on Beats Solo Pro headphones this summer."
     },
     "headerBanner": {
       "imgUrl": "/assets/headphones_a_1.webp",
-      "title": "Beats Solo Air",
+      "title": "Beats Solo Pro",
       "smallText": "Summer Sale",
       "bigText": "Headphones",
       "buttonText": "Shop Wireless Headphones",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat,"
+      "description": "Experience the best sound quality with our Beats Solo Pro headphones, perfect for your summer adventures."
     }
   },
   "products": [
     {
       "imgUrl": "/assets/speaker1.webp",
-      "title": "Marshall Emberton II Compact Portable Bluetooth Speaker",
-      "slug": "marshal-speaker",
+      "title": "Marshall Emberton II Portable Bluetooth Speaker",
+      "slug": "marshall-emberton-ii",
       "discountText": "10% off",
-      "price": 299.99,
-      "category": ["speaker", "Headphones"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+      "price": 149.99,
+      "category": ["speaker", "audio"],
+      "stock": 25,
+      "description": "Compact and powerful, the Marshall Emberton II delivers rich sound quality in a portable design."
     },
     {
       "imgUrl": "/assets/headphones_c_1.webp",
-      "title": "Beats Solo Air",
-      "slug": "Beats-Solo-Air",
-      "price": 299.99,
-      "category": ["speaker", "Headphones"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+      "title": "Beats Solo Pro",
+      "slug": "beats-solo-pro",
+      "price": 299.95,
+      "stock": 30,
+      "category": ["headphones", "audio"],
+      "description": "Beats Solo Pro offers active noise cancelling and superior sound quality for an immersive listening experience."
     },
     {
       "imgUrl": "/assets/watch_1.webp",
-      "title": "Smart Watch",
-      "slug": "smart-watch",
-      "price": 299.99,
-      "category": ["speaker", "Headphones"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+      "title": "Apple Watch Series 7",
+      "slug": "apple-watch-series-7",
+      "price": 399.0,
+      "stock": 15,
+      "category": ["wearable", "tech"],
+      "description": "Stay connected, active, and healthy with the Apple Watch Series 7, featuring advanced health monitoring and fitness tracking."
     },
     {
       "imgUrl": "/assets/earphones_a_1.webp",
-      "title": "Boat Special Edition",
-      "slug": "boat-special-edition",
-      "price": 299.99,
-      "category": ["speaker", "Headphones"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+      "title": "Boat Airdopes 441",
+      "slug": "boat-airdopes-441",
+      "price": 49.99,
+      "stock": 50,
+      "category": ["earphones", "audio"],
+      "description": "Boat Airdopes 441 offers true wireless experience with Bluetooth 5.0 and IPX7 water resistance."
     },
     {
       "imgUrl": "/assets/speaker3.webp",
-      "title": "Marshal Speaker - Special Edition",
-      "slug": "marshal-speaker-special-edition",
-      "price": 299.99,
-      "category": ["speaker", "Headphones"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+      "title": "JBL Flip 5",
+      "slug": "jbl-flip-5",
+      "stock": 20,
+      "price": 119.95,
+      "category": ["speaker", "audio"],
+      "description": "JBL Flip 5 delivers bold sound in a durable, waterproof design, perfect for outdoor adventures."
     },
     {
       "imgUrl": "/assets/headphones_a_4.webp",
-      "title": "Beats Solo Air - Special Edition",
-      "slug": "Beats-Solo-Air-Special-Edition",
-      "price": 299.99,
-      "category": ["speaker", "Headphones"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+      "title": "Sony WH-1000XM4",
+      "slug": "sony-wh-1000xm4",
+      "price": 349.99,
+      "stock": 40,
+      "category": ["headphones", "audio"],
+      "description": "Sony WH-1000XM4 offers industry-leading noise cancellation and exceptional sound quality for an unparalleled listening experience."
     },
     {
       "imgUrl": "/assets/headphones_b_3.webp",
-      "title": "Comfort Headset",
-      "slug": "comfort-headset",
-      "price": 299.99,
-      "category": ["speaker", "Headphones"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+      "title": "Bose QuietComfort 35 II",
+      "slug": "bose-quietcomfort-35-ii",
+      "price": 299.0,
+      "stock": 25,
+      "category": ["headphones", "audio"],
+      "description": "Bose QuietComfort 35 II provides world-class noise cancellation and premium sound quality for a truly immersive experience."
     },
     {
       "imgUrl": "/assets/earphones_c_1.webp",
-      "title": "Earphones",
-      "slug": "earphones",
-      "price": 299.99,
-      "category": ["speaker", "Headphones"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus"
+      "title": "Samsung Galaxy Buds Pro",
+      "slug": "samsung-galaxy-buds-pro",
+      "stock": 35,
+      "price": 199.99,
+      "category": ["earphones", "audio"],
+      "description": "Samsung Galaxy Buds Pro offers intelligent active noise cancellation and superior sound quality in a sleek, comfortable design."
     }
   ]
 }
